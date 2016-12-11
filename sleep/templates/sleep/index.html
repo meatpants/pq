@@ -1,0 +1,13 @@
+
+
+{% if sleep_list %}
+	<ul>
+	{% for state in sleep_list %}
+		<li>
+			<a>{{state.get_state}}</a>			
+		</li>
+	{% endfor %}
+	</ul>	
+{% else %}
+	<p> No states are available. </p>
+{% endif %}	
